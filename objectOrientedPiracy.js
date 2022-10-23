@@ -37,4 +37,4 @@ function Ship(draft,crew) {
         return false
       }
     }
-   }
+}
