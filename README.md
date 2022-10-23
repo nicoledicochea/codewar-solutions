@@ -10,6 +10,10 @@ The solutions to all my Codewars. Allows me to look back and my solutions and re
 
 Tracking my progress in regards to how my code is written. While solving a Codewars feels great, learning other ways to solve the same problem is even better!
 
-## Lessons Learned:
+## Optimizations:
 
 Revise code more often.
+
+## Lessons Learned:
+
+Lots of amazing ways to solve JS problems!
