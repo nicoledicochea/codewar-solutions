@@ -5,30 +5,24 @@
 
 // If your language supports it, try using a switch statement.
 
-function swap (string) {
+function switchItUp(number){
     // PREP
-    // P: string
-    // R: string with all vowels capitalized
-    // E: swap('hello') = 'hEllO'
-      //  swap('hi') = 'hI'
-    // P: create variable stringArr
-      //  loop through string
-      //  push values to stringArr
-      //  conditonal: if vowel, do toUpperCase before pushing
-      //  join stringArr ('') to create a string
-      //  return joined stringArr
+    // P: a number 0 - 9
+    // R: the number in words
+    // E: swithItUp(3) = 'three'
+      // swithItUp(0) = 'zero'
+    // P: use a switch statement for each number
     
-    let stringArr = []
-    for (let i = 0; i < string.length; i++) {
-      if(string[i] === 'a' ||
-        string[i] === 'e' ||
-        string[i] === 'i' ||
-        string[i] === 'o' ||
-        string[i] === 'u'){
-        stringArr.push(string[i].toUpperCase())
-        } else {
-          stringArr.push(string[i])
-        }
-      }
-      return stringArr.join('')
+    switch (number) {
+        case 0: return 'Zero'
+        case 1: return 'One'
+        case 2: return 'Two'
+        case 3: return 'Three'
+        case 4: return 'Four'
+        case 5: return 'Five'
+        case 6: return 'Six'
+        case 7: return 'Seven'
+        case 8: return 'Eight'
+        case 9: return 'Nine'
+    }
 }
