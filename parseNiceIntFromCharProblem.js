@@ -15,3 +15,13 @@ function getAge(inputString){
     return Number(inputString[0])
 }
 
+// REFACTOR   
+
+function getAge(inputString){
+    // P: the string 'x years old' in which x is 0 <= x <= 9
+    // R: the girl's age as an integer
+    // E: getAge('5 years old') = 5
+    // P: use parseInt to return the first integer in the string 
+    
+    return parseInt(inputString)
+}
