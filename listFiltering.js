@@ -24,3 +24,14 @@ function filter_list(l) {
     return newList
     
 }
+
+
+// using filter array method
+
+function filter_list(l) {
+    
+      // filter array by condition: typeof !== 'string'
+  
+  return l.filter((element) => typeof element !== 'string')
+    
+}
