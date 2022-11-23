@@ -58,3 +58,12 @@ return str.toLowerCase()
   .filter(element => element === 'o')
   .length
 }
+
+
+// to clean this equation up more
+
+function XO(str) {
+  let string = str.toLowerCase().split('')
+
+  return string.filter(element => element === 'x').length === string.filter(element => element === 'o').length 
+}
