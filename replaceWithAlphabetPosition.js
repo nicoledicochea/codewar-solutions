@@ -113,3 +113,27 @@ function alphabetPosition(text) {
   return replacedText.join(' ') 
   
 }
+
+
+// without the switch case
+
+// Psuedo code
+// create variable for alphabet
+// return the following:
+  // text to lower case - prevent case sensitivity
+  // split string to an array
+  // filter the array to only return letters
+  // use the indexOf string method 
+    // this gives the index of each letter
+    // the letter position is index + 1
+  // map using indexOf
+  // join array using a space
+
+function alphabetPosition(text) {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  return text.toLowerCase()
+    .split('')
+    .filter((element) => alphabet.includes(element))
+    .map((element) => alphabet.indexOf(element) + 1)
+    .join(' ')
+}
