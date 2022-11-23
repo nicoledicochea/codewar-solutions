@@ -34,3 +34,27 @@ function XO(str) {
     return xCount === oCount
     
 }
+
+
+/*
+  solve using array methods
+*/
+
+function XO(str) {
+  // return 
+    // toLowerCase() to prevent case sensitivty
+    // split string
+    // conditional for imperative > functional calls for declarative
+      // in this case it would be using filter for array
+    // filter split string
+      // by === 'x' or === 'o'
+    // use length of arrays to compare if they are equal
+
+return str.toLowerCase()
+  .split('')
+  .filter(element => element === 'x')
+  .length === str.toLowerCase()
+  .split('')
+  .filter(element => element === 'o')
+  .length
+}
