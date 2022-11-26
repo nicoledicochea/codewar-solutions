@@ -26,3 +26,21 @@ function count (string) {
     
     return strCount
 }
+
+
+// using the forEach function
+
+function count (string) {  
+    let count = {}
+    
+    string.split('').forEach((letter) => {
+      if (count[letter]) {
+        count[letter] ++
+      } else {
+        count[letter] = 1
+      }
+    })
+      
+    return count
+}
+  
