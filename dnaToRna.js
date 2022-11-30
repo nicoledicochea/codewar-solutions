@@ -28,3 +28,11 @@ function DNAtoRNA(dna) {
         return letter === 'T' ? 'U' : letter
     }).join('')
 }
+
+
+
+//
+
+function DNAtoRNA(dna) {
+    return dna.split('T').join('U')
+}
