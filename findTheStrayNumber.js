@@ -25,3 +25,16 @@ function stray(numbers) {
     }
     return strayNumber
 }
+
+
+
+
+// using indexOf and lastIndexOf
+
+function stray(numbers){
+    for (const number in numbers){
+       if (numbers.indexOf(numbers[number]) === numbers.lastIndexOf(numbers[number])){
+         return numbers[number]
+       }
+    }
+}
