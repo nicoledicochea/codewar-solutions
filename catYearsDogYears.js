@@ -44,7 +44,7 @@ let humanYearsCatYearsDogYears = function(humanYears) {
     let dogYears = 15
     
     for (let i = 2; i <= humanYears; i++) {
-      if (humanYears === 2) {
+      if (i === 2) {
         catYears += 9
         dogYears += 9
       } else {
@@ -57,7 +57,7 @@ let humanYearsCatYearsDogYears = function(humanYears) {
 }
   
 
-// correct answer
+// other solution
 
 let humanYearsCatYearsDogYears = function(humanYears) {
     
