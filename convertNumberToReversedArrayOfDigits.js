@@ -34,3 +34,10 @@ function digitize(n) {
   String(n).split('').forEach(digit => arr.unshift(+digit))
   return arr
 }
+
+
+// refractor solution using REVERSE array method
+
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
