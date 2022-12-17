@@ -47,3 +47,12 @@ function longest(s1, s2) {
       .sort()
       .join('')
 }
+
+
+// SET can be used without split
+
+function longest(s1, s2) {
+  return [... new Set (s1 + s2)]
+    .sort()
+    .join('')
+}
