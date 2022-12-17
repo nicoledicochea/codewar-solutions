@@ -33,3 +33,17 @@ function longest(s1, s2) {
       .join('')
 
 }
+
+
+// using SET method
+
+// A Set is a collection of unique values. To remove duplicates from an array:
+
+    // First, convert an array of duplicates to a Set. The new Set will implicitly remove duplicate elements.
+    // Then, convert the set back to an array.
+
+function longest(s1, s2) {
+    return [... new Set ((s1 + s2).split(''))]
+      .sort()
+      .join('')
+}
