@@ -28,3 +28,13 @@ function sumArray(array) {
       return array.reduce((a, c) => a + c, 0)
     }
 }
+
+
+// using sort and slice
+
+function sumArray(array) {
+    return !array ? 0 : array
+      .sort((a, b) => a - b) // sort in ascending order
+      .slice(1, -1) // remove first and last index
+      .reduce((a, b) => a + b, 0)
+}
