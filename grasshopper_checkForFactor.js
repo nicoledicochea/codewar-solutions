@@ -27,3 +27,9 @@ if base % factor = 0, return true
 function checkForFactor (base, factor) {
     return base % factor === 0 ? true : false
 }
+
+// alternatively, can just remove the conditional
+// since result of comparison is true or false
+function checkForFactor (base, factor) {
+    return base % factor === 0 
+}
