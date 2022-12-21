@@ -4,6 +4,8 @@
 
 // [10, 343445353, 3453445, 3453545353453] should return 3453455.
 
+
+
 // P: an array of numbers
 // R: the sum of the 2 lowest positive numbers
 // E: sumTwoSmallestNumbers([5, 8, 12, 19, 22]), 13 
@@ -21,4 +23,13 @@
 function sumTwoSmallestNumbers(numbers) {  
     numbers = numbers.sort((a, b) => a - b)
     return numbers[0] + numbers[1]
-  }
+}
+
+
+// can also write the solution without numbers = numbers.sort(....)
+// since sort by nature is mutable, it changes the original array
+
+function sumTwoSmallestNumbers(numbers) {  
+    numbers.sort((a, b) => a - b)
+    return numbers[0] + numbers[1]
+}
