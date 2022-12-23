@@ -45,3 +45,18 @@ String.prototype.isUpperCase = function() {
     })
     return uppercase
 }
+
+
+
+// simplified: 2 methods
+
+String.prototype.isUpperCase=function() {
+    return this == this.toUpperCase()
+}
+
+
+// OR
+
+String.prototype.isUpperCase = function() {
+    return this.toUpperCase() === this.toString();
+}
