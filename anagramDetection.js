@@ -29,37 +29,37 @@ loop through each word
 if letterCounts for both objects are equal, then return true
 */
 
-let isAnagram = function(test, original) {
-    let testLetterCount = {}
-    let originalLetterCount = {}
-    
-    test
-      .toLowerCase()
-      .split('')
-      .sort()
-      .forEach(letter => {
-        if (!testLetterCount[letter]) {
-          testLetterCount[letter] = 1
-        } else {
-          testLetterCount[letter] ++
-        }
-      })
-    
-    original
-      .toLowerCase()
-      .split('')
-      .sort()
-      .forEach(letter => {
-        if (!originalLetterCount[letter]) {
-          originalLetterCount[letter] = 1
-        } else {
-          originalLetterCount[letter] ++
-        }
-      })
-    
-    return testLetterCount === originalLetterCount
-  
-}
+        // let isAnagram = function(test, original) {
+        //     let testLetterCount = {}
+        //     let originalLetterCount = {}
+            
+        //     test
+        //       .toLowerCase()
+        //       .split('')
+        //       .sort()
+        //       .forEach(letter => {
+        //         if (!testLetterCount[letter]) {
+        //           testLetterCount[letter] = 1
+        //         } else {
+        //           testLetterCount[letter] ++
+        //         }
+        //       })
+            
+        //     original
+        //       .toLowerCase()
+        //       .split('')
+        //       .sort()
+        //       .forEach(letter => {
+        //         if (!originalLetterCount[letter]) {
+        //           originalLetterCount[letter] = 1
+        //         } else {
+        //           originalLetterCount[letter] ++
+        //         }
+        //       })
+            
+        //     return testLetterCount === originalLetterCount
+        
+        // }
 
 // but the object was out of order, even when using sort
 // figured it would be simpler to just sort the strings after splitting into an array and then compare them that way
