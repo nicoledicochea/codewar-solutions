@@ -30,3 +30,21 @@ function solution(str, ending){
       .slice(-ending.length)
       .join('') === ending : true
 }
+
+
+// using endsWith string method
+
+/*
+P: 2 strings
+      str
+      ending
+R: true or false
+  dependent on if str ends with ending
+E: solution('abc', 'bc') // returns true
+solution('abc', 'd') // returns false
+P: use endsWith() string method
+*/ 
+
+function solution2(str, ending){
+    return str.endsWith(ending)
+}
