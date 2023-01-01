@@ -43,3 +43,25 @@ function DNAStrand(dna){
         }
       }).join('')
 }
+
+
+
+
+/// OR using an object!
+// create object of the pairs
+// then return value in mapping
+
+function DNAStrand2(dna){
+    const pairs = {
+      'A': 'T',
+      'T': 'A',
+      'C': 'G',
+      'G': 'C'
+    }
+    
+    return dna
+      .split('')
+      .map(element => {
+        return pairs[element]
+      }).join('')
+}
