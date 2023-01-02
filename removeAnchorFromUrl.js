@@ -25,4 +25,3 @@ function removeUrlAnchor(url){
       }).join('')
 }
 
-
