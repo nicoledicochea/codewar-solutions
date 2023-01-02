@@ -46,3 +46,32 @@ function capitalize(s){
   
   return [alt1.join(''), alt2.join('')]
 }
+
+
+
+// using map instead of push
+
+function capitalize(s){
+    
+    let even = s
+      .split('')
+      .map((element, index) => {
+        if (index % 2 === 0) {
+          return element.toUpperCase()
+        } else {
+          return element
+        }
+      }).join('')
+    
+    let odd = s
+      .split('')
+      .map((element, index) => {
+        if (index % 2 !== 0) {
+          return element.toUpperCase()
+        } else {
+          return element
+        }
+      }).join('')
+    
+    return [even, odd]
+}
