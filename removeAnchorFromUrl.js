@@ -25,3 +25,13 @@ function removeUrlAnchor(url){
       }).join('')
 }
 
+
+
+
+// using split at #
+// return the first item
+    // this would be everything before the #
+
+function removeUrlAnchor2(url){
+    return url.split('#')[0]
+}
