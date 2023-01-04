@@ -27,5 +27,9 @@ function removeChar(str){
    
    
 
+// using SLICE method
 
-
+function removeChar(str) {
+    return str
+      .slice(1, -1)
+}
