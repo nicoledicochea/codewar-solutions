@@ -6,7 +6,7 @@ P: a string, a word
 R: an array of the indexes of the capital letters
 E: capitals('CodEWaRs'), [0,3,4,6]
 P: split word
-map array 
+forEach array 
     conditional element equals element.toUpperCase
 */
 
@@ -21,3 +21,19 @@ let capitals = function (word) {
     })
   return capitals
 }
+
+
+// using map and filter
+
+let capitals2 = function (word) {
+	return word
+    .split('')
+    .map((element, index) => {
+      if (element === element.toUpperCase()) {
+        return index
+      }
+    }).filter(element => {
+      return element != null
+    })
+}
+
