@@ -35,3 +35,11 @@ function removeDuplicateWords (s) {
 }
 
 
+
+
+// using the Set object
+// stores only unique values
+
+function removeDuplicateWords (s) {
+    return [...new Set(s.split(' '))].join(' ')
+}
