@@ -38,7 +38,7 @@ function createPhoneNumber2(numbers){
 
 // using substring method
 
-function createPhoneNumber(numbers){
+function createPhoneNumber3(numbers){
     numbers = numbers.join('')
     return `(${numbers.substring(0, 3)}) ${numbers.substring(3, 6)}-${numbers.substring(6)}`
 }
