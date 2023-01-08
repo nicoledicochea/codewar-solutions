@@ -32,3 +32,13 @@ let number = function(array){
 }
 
 
+
+
+// not using replace
+
+let number2 = function(array){
+    return array
+      .map((element, index) => {
+        return `${index + 1}: ${element}`  
+      })
+}
