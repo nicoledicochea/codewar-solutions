@@ -41,4 +41,22 @@ function duplicateEncode(word){
       }
     }).join('')
 }
-  
+
+
+
+//  using indexOf to determine if character is duplicated
+//  if indexOf === lastIndexOf then character is NOT duplicated
+
+function duplicateEncode2(word){
+  return word
+    .toUpperCase()
+    .split('')
+    .map((character, index, word) => {
+      if(word.indexOf(character) === word.lastIndexOf(character)) {
+        return '('
+      } else {
+        return ')'
+      }
+    }).join('')}
+
+
