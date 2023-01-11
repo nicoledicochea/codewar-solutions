@@ -28,3 +28,19 @@ function reverseWords(str){
     }
     return reverse.join(' ')
 }
+
+
+// using split.reverse.join 
+// use split and join at the space!
+
+// P: split string @ space
+// reverse the resulting array
+// join @ space
+// */
+
+function reverseWords2(str){
+  return str
+    .split(' ')
+    .reverse()
+    .join(' ')
+}
